@@ -3,7 +3,7 @@ import java.util.ArrayDeque;
 import java.util.LinkedList;
 import java.util.Scanner;
 
-public class reverse_order {
+public class multiplication {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in, "cp866");
         System.out.print("¬ведите первое число: ");
@@ -45,7 +45,7 @@ public class reverse_order {
             result += deque.pollLast() * Math.pow(10, deque.size());
             for (int i = deque.size() - 1; i >= 0; --i) {
                 int pos = (int) Math.pow(10, i);
-                result += (deque.pollLast()* -1) * pos;
+                result += (deque.pollLast() * -1) * pos;
             }
         }
         return result;
