@@ -45,7 +45,7 @@ public class addition {
             result += deque.pollLast() * Math.pow(10, deque.size());
             for (int i = deque.size() - 1; i >= 0; --i) {
                 int pos = (int) Math.pow(10, i);
-                result += (deque.pollLast()* -1) * pos;
+                result += (deque.pollLast() * -1) * pos;
             }
         }
         return result;
